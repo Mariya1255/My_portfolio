@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    color: #fffdf9;
+    color: #eeece7;
     background-color: rgb(153, 51, 90);
   }
 }
@@ -33,12 +33,10 @@
   }
 
   .tags:nth-child(3) {
-    background-color: #d38d0b;
+    background-color: hsl(155, 58%, 30%);
   }
 
   .tags:nth-child(4) {
-    background-color: #a82159;
+    background-color: #569753;
   }
 }
-
-

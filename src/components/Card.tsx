@@ -8,9 +8,9 @@ interface propsType{
     tags: string[];
 }
 
-const Card:React.FC<propsType> = ({title, desc, img, tags }) => {
-  return (
-    <div className='border bg-orange-400 w-[300px] sm:w-[350px]'  data-aos="flip-up">
+const Card:React.FC<propsType> = ({ title, desc, img, tags }) => {
+  return (  
+    <div className='border border-amber-500 w-[300px] sm:w-[350px]' data-aos="zoom-in-left">
       <div>
         <Image className='w-[300px] sm:w-[350px] h-auto'
          src={img}
