@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='hidden lg:block'></div>
         <div className='text-145px] sm:text-[140px] font-bold leading-tight flex justify-center items-center'>
           <div>
-            <p data-aos="zoom-in-left">I'm</p> {/* Yahan apostrophe ko escape kiya */}
+            <p data-aos="zoom-in-left">I&apos;m</p> {/* Yahan apostrophe ko escape kiya */}
             <p data-aos="zoom-in-left">Mariya</p>
             <p data-aos="zoom-in-left">Khan</p>
           </div>

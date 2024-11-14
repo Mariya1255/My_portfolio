@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
 import React from "react";
-import Image from "next/image";
+
 
 
 
