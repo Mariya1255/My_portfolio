@@ -6,6 +6,7 @@
   body {
     color: #eeece7;
     background-color: rgb(153, 51, 90);
+    font-family: var(--font-geist-sans);
   }
 }
 

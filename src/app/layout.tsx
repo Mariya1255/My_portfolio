@@ -4,18 +4,22 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import React from "react";
 import Image from "next/image";
+import {geistSans, geistMono}  from "./fonts";
 
 
-const geistSans = localFont({
+const GeistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
+
+const localGeistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+export { geistSans, geistMono};
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -32,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      
         {children}
         <Footer />
       </body>

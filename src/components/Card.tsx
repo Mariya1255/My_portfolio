@@ -12,12 +12,11 @@ const Card:React.FC<propsType> = ({ title, desc, img, tags }) => {
   return (  
     <div className='border border-amber-500 w-[300px] sm:w-[350px]' data-aos="zoom-in-left">
       <div>
-        <Image 
+        <Image className='w-[300px] sm:w-[350px] h-auto'
          src={img}
          width={350}
          height={350}
          alt={title}
-         className='w-[300px] sm:w-[350px] h-auto'
         />
       </div>
 

@@ -10,7 +10,7 @@ const Hero = () => {
       <Navbar />
       <div className='container grid lg:grid-cols-2 h-[calc(100vh-80px)]'> 
         <div className='hidden lg:block'></div>
-        <div className='text-145px] sm:text-[140px] font-bold leading-tight flex justify-center items-center'>
+        <div className='text-145px] sm:text-[125px] font-bold leading-tight flex justify-center items-center'>
           <div>
             <p data-aos="zoom-in-left">I&apos;m</p> {/* Yahan apostrophe ko escape kiya */}
             <p data-aos="zoom-in-left">Mariya</p>
