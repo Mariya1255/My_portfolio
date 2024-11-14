@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
 import React from "react";
-import Image from 'next/image';
+
 
 
 const GeistSans = localFont({
@@ -27,20 +27,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <main>
-          {children}
-        </main>
-        
-        <div >
-          
-        </div>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+      >
+         {/* Aapka Image component yahaan add karen */}
+         <img />
 
+         {children} 
         <Footer />
       </body>
     </html>
