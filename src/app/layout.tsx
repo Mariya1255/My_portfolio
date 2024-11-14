@@ -3,8 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
 import React from "react";
-import Image from "next/image";
-import {geistSans, geistMono}  from "./fonts";
+import Image from 'next/image';
 
 
 const GeistSans = localFont({
@@ -13,13 +12,13 @@ const GeistSans = localFont({
   weight: "100 900",
 });
 
-const localGeistMono = localFont({
+const GeistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
-export { geistSans, geistMono};
+
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -28,16 +27,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-      
-        {children}
+      <body className="antialiased">
+        <main>
+          {children}
+        </main>
+        
+        <div >
+          
+        </div>
+
         <Footer />
       </body>
     </html>
